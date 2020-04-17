@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +11,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','adminController@show');
+Route::get('/','HomeController@show');
+Route::get('/album','HomeController@showAlbum');
+Route::get('/order','OrderController@show');
