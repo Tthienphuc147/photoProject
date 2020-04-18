@@ -1,4 +1,4 @@
-form {
+.form-checkout {
     padding-top: 120px;
 }
 .title-checkout {
@@ -17,6 +17,13 @@ form {
         rgba(241, 199, 9, 0.9108018207282913) 100%
     );
 }
+.title-order {
+    font-weight: 500;
+    font-size: 20px;
+    color: #333;
+    padding-left: 0px;
+    margin-bottom: 25px !important;
+}
 .contain-attr {
     padding: 20px;
     border: 1px solid #ced4da;
@@ -24,15 +31,30 @@ form {
     border-radius: 0px 0px 10px 10px;
     border-top: none;
 }
-.btn-clear, .btn-submit {
-    width: 100px;
+.btn-submit {
+    width: 130px;
     color: #fff;
     background-color: #ffc400;
     border-color: #ffc400;
 }
-.btn-clear {
-    margin-right: 20px;
+/*  */
+.detail-order .image img {
+    object-fit: cover;
+    width: 80px;
 }
-.block-address {
-    margin-top: -10px;
+.detail-order {
+    border-bottom: 1px solid #d2c7c7;
+}
+.address-order p {
+    color: #333;
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.title-address-order {
+    font-weight: 500;
+    font-size: 20px;
+    color: #333;
+    padding-left: 0px;
+    margin-bottom: 5px !important;
 }

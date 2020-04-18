@@ -16,7 +16,7 @@
                 <button class="btn-default BtnLarge">Chọn hình cho book</button>
             </div> --}}
         </div>
-            <input type="submit" class="btn btn-success" name='submitImage' value="Upload Image"/>
+            <input class="fix-order" type="submit" class="btn btn-success" name='submitImage' value="Đặt hàng"/>
         <br/>
 
         <div class="main-content">
@@ -35,7 +35,6 @@
 
 
 </div>
-<div class="fix-order" type="submit" name='submitImage' value="Upload Image">Đặt hàng</div>
 </form>
 <script type="text/javascript">
 
@@ -64,14 +63,6 @@
        }
 
     });
-
-
-
-    $('form').ajaxForm(function()
-
-     {
-      alert("Uploaded SuccessFully");
-     });
 
 
 

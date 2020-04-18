@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{ asset('/public/home/vendors/fontawesome/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/public/home/vendors/owl-carousel/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/public/home/vendors/animate-css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('/public/home/css/order-success.css') }}">
     <!-- main css -->
     <link rel="stylesheet" href="{{ asset('/public/home/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('/public/home/css/responsive.css') }}">
@@ -27,6 +28,9 @@
         <!--================Header Menu Area =================-->
         @include('block.header')
         @yield('content')
+        @yield('script')
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -35,14 +39,14 @@
     <script src="{{ asset('/public/home/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('/public/home/js/stellar.js') }}"></script>
     <script src="{{ asset('/public/home/vendors/isotope/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('/public/home/endors/isotope/isotope.pkgd.min.js') }}v"></script>
+    <script src="{{ asset('/public/home/vendors/isotope/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('/public/home/vendors/owl-carousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('/public/home/js/jquery.ajaxchimp.min.js') }}"></script>
     <script src="{{ asset('/public/home/js/jquery.counterup.min.js') }}"></script>
     <script src="{{ asset('/public/home/js/jquery.waypoints.min.js') }}"></script>
     <script src="{{ asset('/public/home/js/mail-script.js') }}"></script>
     <script src="{{ asset('/public/home/js/contact.js') }}"></script>
-    <script src="{{ asset('/public/home/s/jquery.form.js') }}j"></script>
+    <script src="{{ asset('/public/home/js/jquery.form.js') }}"></script>
     <script src="{{ asset('/public/home/js/jquery.validate.min.js') }}"></script>
     <script src="{{ asset('/public/home/js/mail-script.js') }}"></script>
     <script src="{{ asset('/public/home/js/theme.js') }}"></script>
