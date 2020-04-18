@@ -1,4 +1,4 @@
-@extends('masterPage')
+@extends('masterPageOrder')
 @section('content')
 <form action="">
     <div class="form-checkout">

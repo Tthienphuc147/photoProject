@@ -14,3 +14,4 @@
 Route::get('/','HomeController@show');
 Route::get('/album','HomeController@showAlbum');
 Route::get('/order','OrderController@show');
+Route::post('/images-upload', 'AlbumController@imagesUploadPost')->name('images.upload');
