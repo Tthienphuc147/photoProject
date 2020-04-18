@@ -122,3 +122,6 @@ height: 100%;
   .upload-image{
       padding: 10px;
   }
+  .modal-body .image-item{
+    width: 100%;
+  }

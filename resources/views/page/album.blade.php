@@ -19,13 +19,20 @@
             <input class="fix-order" type="submit" class="btn btn-success" name='submitImage' value="Đặt hàng"/>
         <br/>
 
+
         <div class="main-content">
 
             <div id="image_preview">
-
+                <div class='image-item'>
+                    <div class='image-main-container'>
+                        {{-- <img class='image-main' src='"+URL.createObjectURL(event.target.files[i])+"'> --}}
+                    </div>
+                    <img class ='image-background' src='/public/white.svg' style='width:269px;height:269px'/>
+                  </div>
             </div>
 
         </div>
+
 
 
 
@@ -51,12 +58,23 @@
        {
 
         $('#image_preview').append(
+            "<a href='#ex1_"+i+"'"+ "rel='modal:open'>"+
             "<div class='image-item'>"+
               "<div class='image-main-container'>"+
                   "<img class='image-main' src='"+URL.createObjectURL(event.target.files[i])+"'>"+
               "</div>"+
-              "<img class ='image-background' src='/public/white.svg' style='width:269px;height:269px'/>"+
-            "</div>"
+              "<img id='image_"+i+"'" +  "class ='image-background' src='/public/white.svg' style='width:269px;height:269px'/>"+
+            "</div>"+
+            "</a>"+
+            "<div id='ex1_"+i+"'"+ "class='modal modal-body'>"+
+            "<h3 class='text-center' style='color:grey'>Chụm và thu phóng</h3>"+
+            "<div class='image-item'>"+
+                "<div class='image-main-container'>"+
+                    "<img class='image-main' src='"+URL.createObjectURL(event.target.files[i])+"'>"+
+                "</div>"+
+                "<img class ='image-background' src='/public/white.svg' style='width:269px;height:269px'/>"+
+              "</div>"+
+          "</div>"
 
        );
 
