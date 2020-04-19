@@ -23,7 +23,7 @@ class CheckOutController extends Controller
         $province =Provinces::where('province_id',$request->input('province_id'))->get();
         $district =Districts::where('district_id',$request->input('district_id'))->get();
         $ward =Wards::where('ward_id',$request->input('ward_id'))->get();
-        $address= $request->input('address').' '.$province[0]->type.' '.$province[0]->name.', '.$district[0]->type.' '.$district[0]->name.', '.$ward[0]->type.' '.$ward[0]->name;
+        $address= $request->input('address').' '.$ward[0]->type.' '.$ward[0]->name.', '.$district[0]->type.' '.$district[0]->name.', '.$province[0]->type.' '.$province[0]->name;
         $data3->ten_khach_hang = $request->input('ten_khach_hang');
         $data3->email = $request->input('email');
         $data3->so_dien_thoai = $request->input('so_dien_thoai');

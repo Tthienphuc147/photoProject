@@ -25,7 +25,7 @@ class AlbumController extends Controller
              $data1->product_id=$data->id;
              $imageName = time(). $key . '.' . $value->getClientOriginalExtension();
              $value->move(public_path('upload'), $imageName);
-             $data1->image_url ='/public/upload/'.$imageName;
+             $data1->image_url ='public/upload/'.$imageName;
              $data1->save();
          }
          $data3 = new Orders();

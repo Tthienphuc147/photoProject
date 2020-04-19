@@ -5,7 +5,7 @@
         <!-- begin navbar-header -->
         <div class="navbar-header d-flex align-items-center">
             <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/showadmin">
                 PHOTO
             </a>
         </div>

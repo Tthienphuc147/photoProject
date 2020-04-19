@@ -15,7 +15,7 @@
     </div>
     <!-- end row -->
     <!-- begin row -->
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-xxl-9 m-b-30">
             <div class="card card-statistics h-100 m-b-0">
                 <div class="card-header d-flex justify-content-between">
@@ -69,7 +69,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- end row -->
 </div>
 @endsection

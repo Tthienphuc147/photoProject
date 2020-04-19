@@ -43,6 +43,9 @@
                             <div class="address-order">
                                 <p class="mt-2"><span class="font-weight-bold">Tên khách hàng: </span> {{$data->ten_khach_hang}}</p>
                                 <p class="mt-2"><span class="font-weight-bold">Số điện thoại: </span>{{$data->so_dien_thoai}}</p>
+                                @if ($data->email)
+                                <p class="mt-2"><span class="font-weight-bold">Email: </span>{{$data->email}}</p>
+                                @endif
                                 <p class="mt-2"><span class="font-weight-bold">Địa chỉ gửi hàng: </span>{{$data->location}}</p>
                                 <p class="mt-2"><span class="font-weight-bold">Trạng thái đơn hàng</span></p>
                                 <select value="{{$data->status}}" name="status" id="" class="select-status">
