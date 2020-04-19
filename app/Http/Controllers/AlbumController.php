@@ -9,9 +9,6 @@ use App\Orders;
 use App\Product;
 class AlbumController extends Controller
 {
-    public function show(){
-        return view('page.test');
-     }
      public function imagesUploadPost(Request $request)
 
      {
@@ -28,7 +25,7 @@ class AlbumController extends Controller
              $data1->product_id=$data->id;
              $imageName = time(). $key . '.' . $value->getClientOriginalExtension();
              $value->move(public_path('upload'), $imageName);
-             $data1->image_url ='/public/upload'.$imageName;
+             $data1->image_url ='/public/upload/'.$imageName;
              $data1->save();
          }
          $data3 = new Orders();
@@ -39,7 +36,6 @@ class AlbumController extends Controller
          $data3->district_id = '';
          $data3->ward_id = '';
          $data3->address = '';
-         $data3->status	 = '';
          $data3->quanity = sizeof($request->file('uploadFile'));
          $data3->order_category_id = 1;
          $data3->product_id = $data->id;

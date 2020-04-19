@@ -31,7 +31,6 @@ class CheckOutController extends Controller
         $data3->district_id =  $request->input('district_id');
         $data3->ward_id =  $request->input('ward_id');
         $data3->address =  $request->input('address');
-        $data3->status	 =  0;
         $data3->location = $address;
         $data3->save();
         return redirect('/orderSuccess/view/'.$data3->id);

@@ -29,7 +29,7 @@
                                         <h4 class="text-white mb-0">Admin</h4>
                                         <!-- <small class="text-white">Henry@example.com</small> -->
                                     </div>
-                                    <a href="#" class="text-white font-20 tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đăng xuất"> <i
+                                    <a href="/showadmin/logout" class="text-white font-20 tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đăng xuất"> <i
                                                     class="zmdi zmdi-power"></i></a>
                                 </div>
                             </div>

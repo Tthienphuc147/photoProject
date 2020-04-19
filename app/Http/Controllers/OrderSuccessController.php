@@ -12,4 +12,5 @@ class OrderSuccessController extends Controller
         return view('page.checkout')->with('data',$data);
      }
 
+
 }

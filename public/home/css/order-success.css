@@ -1,7 +1,21 @@
 .form-checkout {
     padding-top: 120px;
 }
+.form-checkout-admin {
+    padding-top: 3rem;
+}
 .title-checkout {
+    text-align: center;
+    height: 80px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 80px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0px;
+    background: #2C2E3E;
+}
+.title-checkout-admin {
     text-align: center;
     height: 80px;
     color: #151515;
@@ -57,4 +71,8 @@
     color: #333;
     padding-left: 0px;
     margin-bottom: 5px !important;
+}
+.select-status{
+    width: 12rem;
+    padding: 0.5rem;
 }

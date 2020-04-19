@@ -59,7 +59,7 @@ input[type=file]{
     background-size: cover;
     overflow-x: auto;
   }
-  #image_preview{
+  #image_preview,#image_preview1{
 
 height: 100%;
   width: 100%;
@@ -71,7 +71,7 @@ height: 100%;
 
   }
 
-  #image_preview img{
+  #image_preview,#image_preview1 img{
 
     width: 200px;
 
@@ -125,3 +125,18 @@ height: 100%;
   .modal-body .image-item{
     width: 100%;
   }
+ #bookType{
+     display: none;
+ }
+
+ .picture-item{
+     position: relative;
+ }
+ .picture-item .select-cover{
+    position: absolute;
+    top: 0;
+    right: 140px;
+    color: #fff;
+    width: 10px;
+    height: 10px;
+ }

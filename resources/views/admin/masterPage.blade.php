@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/public/assets/css/vendors.css') }}" />
     <!-- app style -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/public/assets/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/public/home/css/order-success.css') }}">
 </head>
 
 <body>
@@ -45,10 +46,10 @@
                             <li class="nav-static-title">Quản lý</li>
                             <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-user"></i><span class="nav-title">Khách hàng</span></a>
                                 <ul aria-expanded="false">
-                                    <li> <a href='calendar-full.html'>Danh sách đơn hàng</a> </li>
+                                    <li> <a href='/quantri/order'>Danh sách đơn hàng</a> </li>
                                 </ul>
                             </li>
-                            <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-image"></i><span class="nav-title">Quản lý ảnh</span></a>
+                            {{-- <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-image"></i><span class="nav-title">Quản lý ảnh</span></a>
                                 <ul aria-expanded="false">
                                     <li> <a href='calendar-full.html'>Danh sách ảnh bìa</a> </li>
                                     <li> <a href='calendar-list.html'>Thêm mới ảnh bìa</a> </li>
@@ -64,7 +65,7 @@
                                 <ul aria-expanded="false">
                                     <li> <a href='calendar-full.html'>Quản lý</a> </li>
                                 </ul>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                     <!-- end sidebar-nav -->

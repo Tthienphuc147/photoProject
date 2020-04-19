@@ -14,7 +14,7 @@
                                 <label for="fullname">Họ và tên *</label>
                                 <input type="text" class="form-control" id="fullname"
                                 value="{{$data->ten_khach_hang}}" name="ten_khach_hang"
-                                    placeholder="Họ và tên của bạn..." value="">
+                                    placeholder="Họ và tên của bạn..." value="" required>
                             </div>
                         </div>
                         <div class="row">
@@ -22,7 +22,7 @@
                                 <label for="phone">Số điện thoại *</label>
                                 <input type="text" class="form-control" id="phone"
                                 value="{{$data->so_dien_thoai}}" name="so_dien_thoai"
-                                    placeholder="Số điện thoại của bạn..." value="" >
+                                    placeholder="Số điện thoại của bạn..." value="" required>
                             </div>
                         </div>
                         <div class="row">
@@ -79,13 +79,13 @@
                         <input type="text" class="form-control" id="address"
                             placeholder="Nhập địa chỉ nhận hàng..."
                             value="{{$data->address}}" name="address"
-                            placeholder="Email của bạn..." value="" >
+                            placeholder="Email của bạn..." value="" required >
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 mb-3 text-center">
-                        <button class="btn btn-clear">Hủy</button>
-                        <a href="./order-success.html"><button class="btn btn-submit">Thanh toán</button></a>
+                        <a href="./"><button class="btn btn-clear">Hủy</button></a>
+                    <a href="/orderSuccess/view/{{$data->id}}"><button class="btn btn-submit">Thanh toán</button></a>
                     </div>
                 </div>
             </div>
